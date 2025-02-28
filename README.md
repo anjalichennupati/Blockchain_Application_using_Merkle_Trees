@@ -14,8 +14,9 @@ This project demonstrates the working of Merkle trees in blockchain technology t
 - **Blockchain-based Validation**: Verifies and secures information through Merkle root generation and blockchain integration.
 
 ## Merkle Tree in Blockchain
-
-![image](https://github.com/user-attachments/assets/8a0498ce-7e5b-461d-b65e-57e003792bec)
+ <p align="center">
+  <img src="https://github.com/user-attachments/assets/8a0498ce-7e5b-461d-b65e-57e003792bec" alt="App Screenshot" width="350">
+</p>
 
 - A Merkle tree is a hash-based data structure, generalizing a hash list.
 - Typically implemented as a binary tree, where:
@@ -26,22 +27,26 @@ This project demonstrates the working of Merkle trees in blockchain technology t
 - Provides strong collision resistance (brute-force attack would require 2²⁵⁶ attempts).
 
 ## Implementation Details
-![image](https://github.com/user-attachments/assets/72fc5fa9-5dc4-4fb4-8242-ef7c98d0598b)
+ <p align="center">
+  <img src="https://github.com/user-attachments/assets/72fc5fa9-5dc4-4fb4-8242-ef7c98d0598b" alt="App Screenshot" width="600">
+</p>
 
 1. **Data Storage**:
    - A MySQL database stores product details (e.g., eggs, food items).
    - JDBC is used to connect the project with the database.
 2. **Merkle Tree Construction**:
- ![image](https://github.com/user-attachments/assets/a3aa1038-214d-4185-92af-bf9562d1f9a6)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a3aa1038-214d-4185-92af-bf9562d1f9a6" alt="App Screenshot" width="600">
+</p>
    - Built using the database tables as data.
    - Generates a Merkle root value for verification.
-4. **Blockchain Integration**:
+3. **Blockchain Integration**:
    - A Single Linked List (SLL) blockchain is generated with the same data fields.
    - The blockchain is connected to the Merkle tree.
-5. **Validation Process**:
+4. **Validation Process**:
    - An empty string array is generated based on the number of leaf nodes.
    - Hash values are compared with existing hashes in the table.
-6. **QR Code Implementation**:
+5. **QR Code Implementation**:
    - A blockchain-enabled QR code is generated and printed on product packaging.
    - Consumers scan the QR code to access certification details and timestamps.
 
